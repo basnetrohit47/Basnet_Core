@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea layoutX="66.0" layoutY="23.0" prefHeight="219.0" prefWidth="354.0" text="This is the Instruction for Input data:&#10;&#10;*Empty field does not accept&#10;*ID field only accept integer numbers:&#10;*Name field only accept valid String name:&#10;*Email field only accept valid Email. ex: rohit@gmail.com&#10;*Age field accept olny two digit numbers:&#10;     ex: 9 is invalid; 29 is valid; 100 is inavalid;&#10;*Number field only accept number with 10 digits;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

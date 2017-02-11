@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.epita.basnet.business.DataAction">
+   <children>
+      <Button layoutX="508.0" layoutY="65.0" mnemonicParsing="false" onAction="#create" prefHeight="25.0" prefWidth="55.0" text="Create" />
+      <Button layoutX="41.0" layoutY="39.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="72.0" text="Update" />
+      <Button layoutX="40.0" layoutY="98.0" mnemonicParsing="false" onAction="#display" text="Show data" />
+      <Button layoutX="40.0" layoutY="68.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="72.0" text="Delete" />
+      <TextField fx:id="txtname" layoutX="186.0" layoutY="39.0" promptText="name" />
+      <TextField fx:id="txtemail" layoutX="347.0" layoutY="39.0" promptText="email" />
+      <TextField fx:id="txtage" layoutX="186.0" layoutY="81.0" promptText="age" />
+      <TextField fx:id="txtnumber" layoutX="347.0" layoutY="81.0" promptText="number" />
+      <TableView fx:id="table" layoutX="20.0" layoutY="131.0" prefHeight="264.0" prefWidth="561.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="65.0" text="id" />
+          <TableColumn fx:id="name" prefWidth="148.0" text="name" />
+          <TableColumn fx:id="number" prefWidth="131.0" text="number" />
+            <TableColumn fx:id="age" prefWidth="54.0" text="age" />
+            <TableColumn fx:id="email" prefWidth="178.0" text="email" />
+        </columns>
+      </TableView>
+      <Hyperlink layoutX="521.0" layoutY="20.0" onAction="#help" text="help" />
+      <TextField fx:id="txtid" layoutX="129.0" layoutY="39.0" prefHeight="25.0" prefWidth="45.0" promptText="ID" />
+   </children>
+</AnchorPane>
